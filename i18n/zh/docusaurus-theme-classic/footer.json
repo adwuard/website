@@ -31,10 +31,6 @@
     "message": "博客",
     "description": "The label of footer link with label=Blog linking to blog"
   },
-  "link.item.label.CNCF Community Group": {
-    "message": "CNCF 社团",
-    "description": "The label of footer link with label=CNCF Community Group linking to https://community.cncf.io/chaos-mesh-community/"
-  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/chaos-mesh/chaos-mesh"
@@ -52,7 +48,7 @@
     "description": "The label of footer link with label=Thanks for the technology illustrations by Storyset linking to https://storyset.com/technology"
   },
   "copyright": {
-    "message": "\n        <p style=\"font-weight: 500;\">Copyright © Chaos Mesh Authors 2024 | Documentation Distributed under CC-BY-4.0</p>\n        © 2024 The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href=\"https://www.linuxfoundation.org/trademark-usage/\"> Trademark Usage</a> page.\n      ",
+    "message": "\n        <p style=\"font-weight: 500;\">版权所有 © TuyaOpen Authors 2025 | Documentation Distributed under Apache License Version 2.0</p>\n",
     "description": "The footer copyright"
   }
 }

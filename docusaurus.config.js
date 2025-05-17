@@ -7,26 +7,28 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Chaos Mesh',
-  tagline: 'A Powerful Chaos Engineering Platform for Kubernetes',
+  title: 'TuyaOpen',
+  tagline: 'A Powerful Open Source OS and Platform for IoTs Development',
   favicon: '/img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://chaos-mesh.org',
+  url: 'https://tuyaopen.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  // https://github.com/tuya/TuyaOpen
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'chaos-mesh', // Usually your GitHub org/user name.
-  projectName: 'chaos-mesh.github.io', // Usually your repo name.
+  organizationName: 'tuya-open', // Usually your GitHub org/user name.
+  projectName: 'TuyaOpen', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   trailingSlash: true,
 
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     locales: ['en', 'zh'],
     localeConfigs: {
       en: {
@@ -44,20 +46,20 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         gtag: {
-          trackingID: 'G-T31S4LR9LL',
+          trackingID: 'G-xxxxxxxx',
         },
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/chaos-mesh/website/edit/master/',
+          editUrl: 'https://github.com/tuya/TuyaOpen/edit/master/',
           editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/chaos-mesh/website/edit/master/',
+          editUrl: 'https://github.com/tuya/TuyaOpen/edit/master/',
           editLocalizedFiles: true,
         },
         theme: {
@@ -72,19 +74,19 @@ const config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
-    image: '/img/chaos-mesh-social-preview.png',
+    image: '/img/home/tuyaopen-logo-social-preview.png',
     algolia: {
-      appId: '3BY0S3HQX6',
-      apiKey: '99bb3af44d57f0e8f6d7e019d7e2c2d7',
-      indexName: 'chaos-mesh',
+      appId: '---replace-with-your-app-id---',
+      apiKey: '---replace-with-your-api-key---',
+      indexName: '----replace-with-your-index-name----',
     },
     navbar: {
       hideOnScroll: true,
-      title: 'Chaos Mesh',
+      title: 'TuyaOpen',
       logo: {
-        alt: 'Chaos Mesh',
-        src: 'img/logos/logo-mini.svg',
-        srcDark: 'img/logos/logo-mini-white.svg',
+        alt: 'TuyaOpen',
+        src: 'img/home/tuyaopen-logo-simple-dark.png',
+        srcDark: 'img/home/tuyaopen-logo-simple-light.png',
       },
       items: [
         { to: 'docs', label: 'Documentation' },
@@ -92,29 +94,30 @@ const config = {
           to: 'blog',
           label: 'Blog',
         },
-        {
-          href: 'https://community.cncf.io/chaos-mesh-community/',
-          label: 'Community Group',
-        },
+        // TODO: huate: add the link to the community group
+        // {
+        //   href: 'https://github.com/tuya/TuyaOpen/discussions/',
+        //   label: 'Community Group',
+        // },
 
-        {
-          type: 'docsVersionDropdown',
-          dropdownItemsAfter: [
-            {
-              type: 'html',
-              value: '<hr style="margin: .5em 0;" />',
-            },
-            { to: '/versions', label: 'All Versions' },
-            { to: '/supported-releases', label: 'Supported Releases' },
-          ],
-          position: 'right',
-        },
+        // {
+        //   type: 'docsVersionDropdown',
+        //   dropdownItemsAfter: [
+        //     {
+        //       type: 'html',
+        //       value: '<hr style="margin: .5em 0;" />',
+        //     },
+        //     { to: '/versions', label: 'All Versions' },
+        //     { to: '/supported-releases', label: 'Supported Releases' },
+        //   ],
+        //   position: 'right',
+        // },
         {
           type: 'localeDropdown',
           position: 'right',
         },
         {
-          href: 'https://github.com/chaos-mesh/chaos-mesh',
+          href: 'https://github.com/tuya/TuyaOpen',
           className: 'header-github-link',
           'aria-label': 'GitHub',
           position: 'right',
@@ -124,23 +127,11 @@ const config = {
     footer: {
       links: [
         {
-          title: 'Documentation',
+          title: 'Docs',
           items: [
             {
-              label: 'Quick Start',
-              to: 'docs/quick-start',
-            },
-            {
-              label: 'Run a Chaos Experiment',
-              to: 'docs/run-a-chaos-experiment',
-            },
-            {
-              label: 'Developer Guide Overview',
-              to: 'docs/developer-guide-overview',
-            },
-            {
-              label: 'FAQs',
-              to: 'docs/faqs',
+              label: 'Tutorial',
+              to: '/docs/intro',
             },
           ],
         },
@@ -148,24 +139,29 @@ const config = {
           title: 'Community',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'CNCF Community Group',
-              href: 'https://community.cncf.io/chaos-mesh-community/',
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'X',
+              href: 'https://x.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/chaos-mesh/chaos-mesh',
-            },
-            {
-              label: 'Slack (#project-chaos-mesh)',
-              href: 'https://slack.cncf.io/',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/chaos_mesh',
+              href: 'https://github.com/tuya/TuyaOpen',
             },
           ],
         },
@@ -176,27 +172,11 @@ const config = {
               label: 'Thanks for the technology illustrations by Storyset',
               href: 'https://storyset.com/technology',
             },
-            {
-              html: `
-                <a href="https://www.netlify.com">
-                  <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" />
-                </a>
-              `,
-            },
-            {
-              html: `
-                <img
-                  referrerpolicy="no-referrer-when-downgrade"
-                  src="https://static.scarf.sh/a.png?x-pxid=3103bfa4-2073-4b9a-bdac-f36f63d979a4"
-                />
-              `,
-            },
           ],
         },
       ],
       copyright: `
-        <p style="font-weight: 500;">Copyright © Chaos Mesh Authors ${new Date().getFullYear()} | Documentation Distributed under CC-BY-4.0</p>
-        © ${new Date().getFullYear()} The Linux Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage/"> Trademark Usage</a> page.
+        <p style="font-weight: 500;">Copyright © TuyaOpen Authors ${new Date().getFullYear()} | Documentation Distributed under Apache License Version 2.0</p>
       `,
     },
     prism: {

@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'About Chaos Mesh',
+      label: 'About TuyaOpen',
       items: ['overview', 'basic-features'],
     },
     {
