@@ -54,14 +54,6 @@
     no-repeat;
 }
 
-.cncf-logo {
-  background: center no-repeat url('/img/logos/cncf-color.svg');
-}
-
-[data-theme='dark'] .cncf-logo {
-  background: center no-repeat url('/img/logos/cncf-white.svg');
-}
-
 .theme-doc-markdown a {
   text-decoration: underline;
 }
