@@ -271,6 +271,7 @@ function Home() {
 
         <div className="hero">
           <div className="tw-container tw-mx-auto max-lg:tw-px-4">
+            {/* Row 1 */}
             <div className="tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-gap-8">
               <div className={clsx('tw-relative tw-flex-1 tw-flex tw-items-center tw-overflow-hidden xl:tw-h-[640px]')}>
                 <img className="tw-absolute tw-w-[90%]" src="/img/home/chaosd-bg.svg" />
@@ -278,8 +279,8 @@ function Home() {
                   {/* <ChaosdFeatures /> */}
                   <img
                     className="scroll-to-display tw-w-[60%]"
-                    style={{ width: 400 }}
-                    src="img/features/security-first.svg"
+                    style={{ width: 700 }}
+                    src="img/features/Printed circuit board-bro.svg"
                   />
                 </div>
               </div>
@@ -319,6 +320,56 @@ function Home() {
                 >
                   <Translate id="home.learnmore">Learn More →</Translate>
                 </Link>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-gap-8">
+              <div className="tw-flex-[1.5] tw-z-10">
+                <h2 className="tw-text-4xl xl:tw-text-5xl">
+                  {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                  {i18n.currentLocale === 'en' && (
+                    <span>
+                      Meet <span className={styles.heroTitle}>Tuya T5 MCU</span>: Next Generation AI+IoT MCU
+                    </span>
+                  )}
+                  {i18n.currentLocale === 'zh' && (
+                    <span>
+                      <span className={styles.heroTitle}>Tuya AI</span>：强大的多模態 AI 交互模型
+                    </span>
+                  )}
+                </h2>
+                <p className="lg:tw-text-lg tw-font-medium">
+                  <Translate
+                    id="home.chaosd.desc"
+                    values={{
+                      link: (
+                        <Link className="tw-underline dark:tw-no-underline" to="/docs/simulate-physical-machine-chaos">
+                          PhysicalMachineChaos
+                        </Link>
+                      ),
+                    }}
+                  >
+                    {
+                      'Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.'
+                    }
+                  </Translate>
+                </p>
+                <Link to="https://tuya.ai" className="tw-btn !tw-btn-primary tw-gap-2 hover:-tw-translate-y-[3px]">
+                  <Translate id="home.learnmore">Learn More →</Translate>
+                </Link>
+              </div>
+
+              <div className={clsx('tw-relative tw-flex-1 tw-flex tw-items-center tw-overflow-hidden xl:tw-h-[640px]')}>
+                <img className="tw-absolute tw-w-[90%]" src="/img/home/chaosd-bg.svg" />
+                <div className="tw-flex tw-justify-center tw-items-center xl:tw-w-[75%] lg:tw-h-[100%]">
+                  {/* <ChaosdFeatures /> */}
+                  <img
+                    className="scroll-to-display tw-w-[60%]"
+                    style={{ width: 700 }}
+                    src="img/features/Smart home-amico.svg"
+                  />
+                </div>
               </div>
             </div>
           </div>

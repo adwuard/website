@@ -4,25 +4,24 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import { clsx } from 'clsx'
 
 import Card from './Card'
-
 function Feature({ imgUrl, title, description, className, imageWidth }) {
-  const isKubernetes = imgUrl === 'img/features/Programming-rafiki.svg'
+  const isMainImg = imgUrl === 'img/features/Team work-bro.svg'
 
   return (
     <Card className={className}>
       <div
         className={clsx(
           'tw-relative tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-h-full',
-          isKubernetes && 'lg:tw-items-start',
+          isMainImg && 'lg:tw-items-start',
         )}
       >
-        {!isKubernetes ? (
+        {!isMainImg ? (
           <div className="tw-flex-1 max-lg:tw-mb-6 tw-text-center">
             <img className="scroll-to-display tw-w-[60%]" style={{ width: imageWidth }} src={useBaseUrl(imgUrl)} />
           </div>
         ) : (
           <img
-            className="scroll-to-display lg:tw-absolute lg:tw-right-6 lg:-tw-bottom-12 max-lg:tw-w-[40%] lg:tw-h-48 max-lg:tw-mb-6"
+            className="scroll-to-display lg:tw-absolute lg:tw-right-3 lg:-tw-bottom-20 max-lg:tw-w-[52%] lg:tw-h-[85%] max-lg:tw-mb-6"
             src={useBaseUrl(imgUrl)}
           />
         )}
@@ -41,7 +40,7 @@ export default function Features() {
   return (
     <>
       <Feature
-        imgUrl="img/features/Programming-rafiki.svg"
+        imgUrl="img/features/Team work-bro.svg"
         title={<Translate id="home.features.title">Design for IoT Makers</Translate>}
         description={
           <p>
