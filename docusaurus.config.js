@@ -94,6 +94,10 @@ const config = {
           to: 'blog',
           label: 'Blog',
         },
+        {
+          to: 'supported-hardware',
+          label: 'Supported Hardware',
+        },
         // TODO: huate: add the link to the community group
         // {
         //   href: 'https://github.com/tuya/TuyaOpen/discussions/',

@@ -164,7 +164,7 @@ function Home() {
                 )}
                 {i18n.currentLocale === 'zh' && (
                   <span>
-                    <span className={styles.heroTitle}>多样化</span>的故障类型
+                    <span className={styles.heroTitle}>TuyaOpen SDK</span>模块化软硬件开发
                   </span>
                 )}
               </h2>
@@ -235,10 +235,10 @@ function Home() {
                   <div className="tw-flex tw-gap-4 tw-mb-6">
                     <Card>
                       <h4 className="text-lg">
-                        <Translate id="home.workflows.suspend">Title 1</Translate>
+                        <Translate id="home.workflows.arduino">Title 1</Translate>
                       </h4>
                       <p>
-                        <Translate id="home.workflows.suspend.desc">
+                        <Translate id="home.workflows.arduino.desc">
                           Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing
                           elit quisque faucibus.
                         </Translate>
@@ -246,10 +246,10 @@ function Home() {
                     </Card>
                     <Card>
                       <h4 className="text-lg">
-                        <Translate id="home.workflows.statuscheck">Title 2</Translate>
+                        <Translate id="home.workflows.arduinoide">Title 2</Translate>
                       </h4>
                       <p>
-                        <Translate id="home.workflows.statuscheck.desc">
+                        <Translate id="home.workflows.arduinoide.desc">
                           Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing
                           elit quisque faucibus.
                         </Translate>

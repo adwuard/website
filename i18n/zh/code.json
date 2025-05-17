@@ -442,7 +442,7 @@
     "description": "The title of the tag list page"
   },
   "home.desc": {
-    "message": "TuyaOpen 为 Kubernetes 带来了各种类型的故障模拟，并拥有强大的故障场景编排能力。它可以帮助你方便地模拟在开发、测试和生产环境中可能发生的各种异常情况，并发现系统中潜在的问题。"
+    "message": "TuyaOpen 是从行业领先的 TuyaOS 架构开源的。经过全球 130 万开发者的验证，它提供了一个定义良好的 API，用于开发支持不同 MCU 的 C/C++ 应用程序。抽象了外设连接、云连接和安全性的复杂性。此框架通过简单的编码体验加速您的开发过程，使您能够更快、更轻松地构建 AI+IoT 产品。"
   },
   "home.getstarted": {
     "message": "开始使用 →"
@@ -454,25 +454,25 @@
     "message": "TuyaOpen 的用户"
   },
   "home.features.desc": {
-    "message": "基于混沌工程的原则，TuyaOpen 将真实世界的事件抽象成可以直接应用的对象，隐藏了琐碎的细节。"
+    "message": ""
   },
   "home.features.title": {
-    "message": "为 Kubernetes 设计"
+    "message": "開源生態"
   },
   "home.features.desc0": {
-    "message": "在 Kubernetes 领域，{crd} 是实现自定义资源的成熟解决方案。 TuyaOpen 借助 CRD 实现了与 Kubernetes 生态系统的自然融合。"
+    "message": "随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
   "home.features.easytouse": {
     "message": "易于使用"
   },
   "home.features.easytouse.desc": {
-    "message": "无需特殊依赖，TuyaOpen可以轻松地直接部署在Kubernetes集群上，包括 {minikube} 和 {kind}。"
+    "message": "随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
   "home.features.easytouse.list.1": {
-    "message": "无需修改应用的部署逻辑，拥有在生产环境中进行混沌实验的能力。"
+    "message": "随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
   "home.features.easytouse.list.2": {
-    "message": "通过仪表盘快速创建混沌实验，允许用户实时观察实验的状态并快速回滚任何注入的故障。"
+    "message": "随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
   "home.features.flexiblescope": {
     "message": "灵活的范围"
@@ -498,17 +498,17 @@
   "home.workflows.desc": {
     "message": "home.workflows.desc 随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
-  "home.workflows.suspend": {
-    "message": "挂起"
+  "home.workflows.arduino": {
+    "message": "IDE"
   },
-  "home.workflows.suspend.desc": {
-    "message": "home.workflows.suspend.desc 随机文字在这里随机文字在这里随机文字在这里"
+  "home.workflows.arduino.desc": {
+    "message": "home.workflows.arduino.desc 随机文字在这里随机文字在这里随机文字在这里"
   },
-  "home.workflows.statuscheck": {
-    "message": "状态检查"
+  "home.workflows.arduinoide": {
+    "message": "兼容性"
   },
-  "home.workflows.statuscheck.desc": {
-    "message": "home.workflows.statuscheck.desc 随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
+  "home.workflows.arduinoide.desc": {
+    "message": "home.workflows.arduinoide.desc 随机文字在这里随机文字在这里随机文字在这里随机文字在这里"
   },
   "home.startcreating": {
     "message": "开始创建 →"
