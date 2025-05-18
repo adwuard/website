@@ -206,6 +206,16 @@ const config = {
     './docusaurus-tailwind-v3',
     ['@gracefullight/docusaurus-plugin-microsoft-clarity', { projectId: 'lggqck9srz' }],
     './src/plugins/hardwarePagesGenerator',
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hardware-content',
+        path: 'content/hardware',
+        routeBasePath: 'hardware-content',
+        include: ['*.mdx'],
+        sidebarPath: false,
+      },
+    ],
   ],
 }
 

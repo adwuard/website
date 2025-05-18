@@ -16,7 +16,7 @@ const esp32 = {
     { name: 'Operating Voltage', value: '3.0V – 3.6V' },
     { name: 'Operating Temperature', value: '−40°C to 125°C' },
   ],
-  markdownFile: '/content/hardware/esp32-extra.mdx',
+  markdownFile: '/hardware-content/esp32-extra.mdx',
 }
 
 module.exports = esp32
