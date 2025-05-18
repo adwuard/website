@@ -36,4 +36,4 @@ const devices = [
   },
 ]
 
-export default devices
+module.exports = devices

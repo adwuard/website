@@ -1,40 +1,19 @@
 import React from 'react';
-import { useParams } from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Redirect } from '@docusaurus/router';
-import NotFound from '@theme/NotFound';
-import devices from '../../data/hardware/devices';
-import esp32Meta from '../../data/hardware/metadata/esp32';
-import picoMeta from '../../data/hardware/metadata/pico';
-import SpecsTable from '../../components/SpecsTable';
-import MarkdownSection from '../../components/MarkdownSection';
-import styles from './[deviceId].module.css';
+import SpecsTable from './SpecsTable';
+import MarkdownSection from './MarkdownSection';
+import styles from './HardwareDetailTemplate.module.css';
 
-export default function DeviceDetailPage() {
-  const { deviceId } = useParams();
-  const device = devices.find((d) => d.id === deviceId);
+export default function HardwareDetailTemplate(props) {
+  const { device, meta } = props;
 
-  if (!device) {
-    return <NotFound />;
-  }
-
-  const metaMap = {
-    esp32: esp32Meta,
-    pico: picoMeta,
-  };
-  const meta = metaMap[deviceId] || {};
   const tags = Array.isArray(meta.tags) ? meta.tags : [];
   const rawSpecs = meta.specs || [];
   const specs = Array.isArray(rawSpecs)
     ? rawSpecs
     : Object.entries(rawSpecs).map(([name, value]) => ({ name, value }));
   const markdownFile = meta.markdownFile;
-
-  // Redirect from old URL pattern if needed
-  if (window.location.pathname.startsWith('/hardware/') && window.location.pathname !== `/hardware/${deviceId}`) {
-    return <Redirect to={useBaseUrl(`/hardware_pages/${deviceId}`)} />;
-  }
 
   return (
     <main className={styles.contentContainer}>

@@ -17,4 +17,4 @@ const pico = {
   markdownFile: '/content/hardware/pico-extra.mdx',
 }
 
-export default pico
+module.exports = pico

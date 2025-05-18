@@ -1,4 +1,4 @@
-export const esp32 = {
+const esp32 = {
   tags: ['wifi', 'bluetooth', 'dual-core', 'microcontroller', 'xtensa'],
   specs: [
     { name: 'Architecture', value: 'Xtensa Dual-Core 32-bit LX6' },
@@ -19,4 +19,4 @@ export const esp32 = {
   markdownFile: '/content/hardware/esp32-extra.mdx',
 }
 
-export default esp32
+module.exports = esp32

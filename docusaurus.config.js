@@ -205,6 +205,7 @@ const config = {
   plugins: [
     './docusaurus-tailwind-v3',
     ['@gracefullight/docusaurus-plugin-microsoft-clarity', { projectId: 'lggqck9srz' }],
+    './src/plugins/hardwarePagesGenerator',
   ],
 }
 
