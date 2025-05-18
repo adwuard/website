@@ -95,8 +95,9 @@ const config = {
           label: 'Blog',
         },
         {
-          to: 'supported-hardware',
+          to: '/hardware_pages',
           label: 'Supported Hardware',
+          position: 'left',
         },
         // TODO: huate: add the link to the community group
         // {
