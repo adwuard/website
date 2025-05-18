@@ -2,6 +2,7 @@
  * Metadata for Raspberry Pi Pico
  */
 const pico = {
+  id: 'pico',
   tags: ['microcontroller', 'rp2040', 'raspberry-pi', 'embedded', 'iot'],
   specs: {
     Microcontroller: 'RP2040 (Dual-core ARM Cortex-M0+ @ 133 MHz)',

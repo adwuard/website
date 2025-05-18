@@ -1,4 +1,5 @@
 const esp32 = {
+  id: 'esp32',
   tags: ['wifi', 'bluetooth', 'dual-core', 'microcontroller', 'xtensa'],
   specs: [
     { name: 'Architecture', value: 'Xtensa Dual-Core 32-bit LX6' },

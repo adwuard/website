@@ -1,24 +1,32 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { useLocation } from '@docusaurus/router';
 import Layout from '@theme/Layout';
 import SpecsTable from './SpecsTable';
 import MarkdownSection from './MarkdownSection';
 
 export default function HardwareDetailTemplate(props) {
-  const { device, meta } = props;
+  const { device: devices, meta } = props;
+  
+  const deviceId = meta.id
+  const device = devices.find(d => d.id === deviceId);
+  console.log('Device ID:', deviceId);
+  console.log('Device:', device);
+  
+  // Handle case where device is not found
+  // if (!device) {
+    // return <div>Device not found: {deviceId}</div>;
+  // }
 
   const tags = Array.isArray(meta.tags) ? meta.tags : [];
   const rawSpecs = meta.specs || [];
   const specs = Array.isArray(rawSpecs)
     ? rawSpecs
     : Object.entries(rawSpecs).map(([name, value]) => ({ name, value }));
-  const markdownFile = meta.markdownFile;
-  
-
-  const deviceId = props.deviceId;
-  console.log('Device ID:', deviceId);
-  
+  const markdownFile = meta.markdownFile
+    ? useBaseUrl(meta.markdownFile)
+    : null;
   return (
     <Layout title={device.name} description={device.overview}>
       <main className="tw-max-w-4xl tw-mx-auto tw-px-4 tw-py-8">
