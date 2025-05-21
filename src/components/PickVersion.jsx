@@ -12,6 +12,7 @@ import CodeBlock from '@theme/CodeBlock'
 export const usePickVersion = (siteConfig, versions) => {
   const pathname = window.location.pathname
 
+  return 'current'
   let preferred = window.localStorage.getItem('docs-preferred-version-default')
   // Get the last selected version from local storage on the homepage.
   if (pathname === siteConfig.baseUrl && preferred) {
