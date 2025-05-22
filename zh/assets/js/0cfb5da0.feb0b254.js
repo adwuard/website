@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchaos_mesh_website=self.webpackChunkchaos_mesh_website||[]).push([[2068],{236:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/website/zh/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"\u535a\u5ba2","blogTitle":"\u535a\u5ba2"}}')}}]);
