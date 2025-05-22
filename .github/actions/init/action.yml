@@ -1,14 +1,29 @@
-name: Init environment
+name: Deploy to GitHub Pages
 
-runs:
-  using: 'composite'
-  steps:
-    - uses: pnpm/action-setup@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 22
-        cache: 'pnpm'
+on:
+  push:
+    branches: [ed/doc-integrate] # Trigger on pushes to main branch
 
-    - name: Install dependencies
-      run: pnpm i --frozen-lockfile
-      shell: bash
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Docusaurus
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # Deploy to gh-pages branch
+          folder: build # Docusaurus builds to this folder
+          token: ${{ secrets.GITHUB_TOKEN }}

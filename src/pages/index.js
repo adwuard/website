@@ -26,7 +26,7 @@ import styles from './index.module.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const description =
-  'Chaos Mesh brings various types of fault simulation to Kubernetes and has an enormous capability to orchestrate fault scenarios. It helps you conveniently simulate various abnormalities that might occur in reality during the development, testing, and production environments and find potential problems in the system.'
+  'TuyaOpen provides a free, open-source IoT operating system featuring industry leading connectivity, security, device and peripheral management, and A.I. Multimodal capabilities. Develop your next A.I. product using our comprehensive development tools, extensive code examples, and wide variety of microcontroller development boards available.'
 
 function Home() {
   const { siteConfig, i18n } = useDocusaurusContext()
@@ -61,7 +61,7 @@ function Home() {
   return (
     <Layout description={translate({ message: description, id: 'home.desc' })}>
       <Head>
-        <title>Chaos Mesh: {siteConfig.tagline}</title>
+        <title>TuyaOpen: {siteConfig.tagline}</title>
       </Head>
       <main>
         <div className="hero tw-relative tw-h-[768px] tw-pt-0 tw-overflow-hidden">
@@ -75,21 +75,21 @@ function Home() {
                     styles.heroTitle,
                   )}
                 >
-                  {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                  {/* Since the following texts are not simple strings, we can't use <Translate /> here. */}
                   {i18n.currentLocale === 'en' && (
                     <>
-                      <span>Break</span>
+                      <span>Build Next</span>
                       <br />
-                      <span>Your System</span>
+                      <span>AI+IoT Hardware with</span>
                       <br />
-                      <span>Constructively</span>
+                      <span>TuyaOpen</span>
                     </>
                   )}
                   {i18n.currentLocale === 'zh' && (
                     <>
-                      <span>破而后立</span>
+                      <span>用 TuyaOpen</span>
                       <br />
-                      <span className="tw-text-3xl">建设性地解构与优化你的系统</span>
+                      <span className="tw-text-3xl">创造你下个 AI+IoT 硬件</span>
                     </>
                   )}
                 </h1>
@@ -104,7 +104,7 @@ function Home() {
                     <Translate id="home.getstarted">Get Started →</Translate>
                   </Link>
                   <Link
-                    to="https://github.com/chaos-mesh/chaos-mesh"
+                    to="https://github.com/tuya/TuyaOpen"
                     className="tw-btn !tw-btn-neutral tw-gap-2 dark:tw-glass hover:-tw-translate-y-[3px]"
                   >
                     <IconOctocat className="tw-w-4 tw-h-4 tw-fill-white" />
@@ -113,38 +113,14 @@ function Home() {
                 </div>
               </div>
 
-              <div className="lg:max-xl:tw-w-[500px] tw-p-6 lg:tw-p-3">
+              {/* <div className="lg:max-xl:tw-w-[500px] tw-p-6 lg:tw-p-3">
                 <h2 className="tw-inline-block tw-text-base lg:tw-text-lg tw-font-semibold tw-rounded-2xl tw-backdrop-blur-sm lg:tw-backdrop-blur">
                   <Translate id="home.tryitout">Try it out with the following command 👇</Translate>
                 </h2>
                 <PickVersion className="!tw-mb-0">
                   curl -sSL https://mirrors.chaos-mesh.org/latest/install.sh | bash
                 </PickVersion>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero">
-          <div className="tw-container tw-mx-auto max-lg:tw-px-4 tw-text-center">
-            <h2 className="tw-text-lg">
-              <Translate id="home.whoisusing">Users of Chaos Mesh</Translate>
-            </h2>
-            <div className="max-md:tw-overflow-x-auto dark:tw-invert dark:tw-saturate-0">
-              <div className="row max-md:tw-w-[1280px]">
-                {whoIsUsing.map((w) => (
-                  <div key={w.name} className={clsx('col col--1', styles.whiteboardCol)}>
-                    <a
-                      className="tw-flex tw-justify-center tw-items-center tw-h-[100px] tw-select-none"
-                      href={w.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img style={w.style} src={useBaseUrl(w.img)} alt={w.name} />
-                    </a>
-                  </div>
-                ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -153,24 +129,20 @@ function Home() {
           <div className="tw-container tw-mx-auto max-lg:tw-px-4">
             <div className="tw-max-w-[800px] tw-mb-12 tw-mx-auto tw-text-center">
               <h2 className="tw-text-4xl xl:tw-text-5xl">
-                {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                {/* Since the following texts are not simple strings, we can't use <Translate /> here. */}
                 {i18n.currentLocale === 'en' && (
                   <span>
-                    Make <span className={styles.heroTitle}>Cloud Native + Chaos Engineering</span> simple and
-                    straightforward
+                    Make <span className={styles.heroTitle}>AI+IoT Development</span> simple and straightforward
                   </span>
                 )}
                 {i18n.currentLocale === 'zh' && (
                   <span>
-                    让<span className={styles.heroTitle}>云原生 + 混沌工程</span>变得简单直接
+                    让<span className={styles.heroTitle}>AI+IoT 开发</span>变得简单直接
                   </span>
                 )}
               </h2>
               <p className="lg:tw-text-lg tw-font-medium">
-                <Translate id="home.features.desc">
-                  Based on the principles of Chaos Engineering, Chaos Mesh abstracts real-world events into objects that
-                  can be directly applied, hiding the trivial details.
-                </Translate>
+                <Translate id="home.features.desc">Change this to SDK introduction and Pros List.</Translate>
               </p>
             </div>
 
@@ -184,23 +156,25 @@ function Home() {
           <div className="tw-container tw-mx-auto max-lg:tw-px-4">
             <div className="tw-max-w-[800px] tw-mx-auto tw-text-center">
               <h2 className="tw-text-4xl xl:tw-text-5xl">
-                {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                {/* Since the following texts are not simple strings, we can't use <Translate /> here. */}
                 {i18n.currentLocale === 'en' && (
                   <span>
-                    <span className={styles.heroTitle}>Wide variety</span> of failure types
+                    <span className={styles.heroTitle}>TuyaOpen SDK</span> modularized Hardware-Software development
                   </span>
                 )}
                 {i18n.currentLocale === 'zh' && (
                   <span>
-                    <span className={styles.heroTitle}>多样化</span>的故障类型
+                    <span className={styles.heroTitle}>TuyaOpen SDK</span>模块化软硬件开发
                   </span>
                 )}
               </h2>
               <p className="lg:tw-text-lg tw-font-medium">
                 <Translate id="home.failuretypes.desc">
-                  Chaos Mesh initially started from a distributed system perspective, fully considering its possible
-                  failures, thus providing more comprehensive and fine-grained fault types to help users with fault
-                  injection for networks, disks, file systems, operating systems, etc.
+                  TuyaOpen is open-sourced from industry leading TuyaOS Archtecture. Proven by 1.3 Million developers
+                  world-wide. It Provides a well-defined API to develop your C/C++ application that support different
+                  MCUs. Abstract the complexity of peferial connection, clould connection, and security. This framework
+                  accelerate your development process with simple codeing experience needed. Allows you to build AI+IoT
+                  product faster and easier.
                 </Translate>
               </p>
             </div>
@@ -215,16 +189,14 @@ function Home() {
 
             <div className="tw-flex tw-justify-center tw-mt-12">
               <Link
-                to="/docs/simulate-pod-chaos-on-kubernetes"
+                to="https://github.com/tuya/TuyaOpen/blob/master/README.md"
                 className="tw-btn !tw-btn-primary tw-gap-2 hover:-tw-translate-y-[3px]"
               >
                 <IconLibrary className="tw-w-4 tw-h-4 tw-fill-primary-content" />
                 <Translate id="home.exploremore">Explore More</Translate>
               </Link>
             </div>
-            <div className="tw-grid tw-gap-8 lg:tw-grid-cols-3 tw-my-12">
-              <CodeGrid />
-            </div>
+            <div className="tw-grid tw-gap-8 lg:tw-grid-cols-3 tw-my-12">{/* <CodeGrid /> */}</div>
           </div>
         </div>
 
@@ -236,50 +208,56 @@ function Home() {
             <div className="tw-relative tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-gap-8">
               <div className="tw-flex-1">
                 <div className="xl:tw-w-[90%]">
+                  <span className="tw-badge tw-badge-primary">
+                    <Translate id="home.experimental">Experimental</Translate>
+                  </span>
+
                   {/* TODO: add translation. */}
                   <h2 className="tw-text-4xl xl:tw-text-5xl">
-                    {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                    {/* Since the following texts are not simple strings, we can't use <Translate /> here. */}
                     {i18n.currentLocale === 'en' && (
                       <span>
-                        Orchestrate complex fault scenarios with <span className={styles.heroTitle}>Workflows</span>
+                        Alternative IDE that you familer with <span className={styles.heroTitle}> Arduino IDE</span>
                       </span>
                     )}
                     {i18n.currentLocale === 'zh' && (
                       <span>
-                        使用<span className={styles.heroTitle}>工作流</span>编排复杂的故障场景
+                        使用你熟悉的IDE <span className={styles.heroTitle}>TuyaOpen for Arduino</span>
                       </span>
                     )}
                   </h2>
                   <p className="lg:tw-text-lg tw-font-medium">
                     <Translate id="home.workflows.desc">
-                      Real-world failures are often not isolated causes.Chaos Mesh has built-in workflows that allow you
-                      to experiment serially or in parallel at will to build walkthroughs that fit the architecture.
+                      In addition to the C/C++ development environment, you can use the familiar Arduino IDE that you
+                      know and love. You'll still enjoy the simplicity of the TuyaOpen IoT Development Framework.
                     </Translate>
                   </p>
                   <div className="tw-flex tw-gap-4 tw-mb-6">
                     <Card>
                       <h4 className="text-lg">
-                        <Translate id="home.workflows.suspend">Suspend</Translate>
+                        <Translate id="home.workflows.arduino">Title 1</Translate>
                       </h4>
                       <p>
-                        <Translate id="home.workflows.suspend.desc">
-                          You can also use the suspend node to simulate a temporary recovery.
+                        <Translate id="home.workflows.arduino.desc">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing
+                          elit quisque faucibus.
                         </Translate>
                       </p>
                     </Card>
                     <Card>
                       <h4 className="text-lg">
-                        <Translate id="home.workflows.statuscheck">Status Check</Translate>
+                        <Translate id="home.workflows.arduinoide">Title 2</Translate>
                       </h4>
                       <p>
-                        <Translate id="home.workflows.statuscheck.desc">
-                          You can also use customized status checks to inform the cluster status.
+                        <Translate id="home.workflows.arduinoide.desc">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing
+                          elit quisque faucibus.
                         </Translate>
                       </p>
                     </Card>
                   </div>
                   <Link
-                    to="/docs/create-chaos-mesh-workflow/"
+                    to="https://github.com/tuya/arduino-TuyaOpen"
                     className="tw-btn !tw-btn-primary tw-gap-2 hover:-tw-translate-y-[3px]"
                   >
                     <Translate id="home.startcreating">Start Creating →</Translate>
@@ -293,27 +271,30 @@ function Home() {
 
         <div className="hero">
           <div className="tw-container tw-mx-auto max-lg:tw-px-4">
+            {/* Row 1 */}
             <div className="tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-gap-8">
               <div className={clsx('tw-relative tw-flex-1 tw-flex tw-items-center tw-overflow-hidden xl:tw-h-[640px]')}>
                 <img className="tw-absolute tw-w-[90%]" src="/img/home/chaosd-bg.svg" />
                 <div className="tw-flex tw-justify-center tw-items-center xl:tw-w-[75%] lg:tw-h-[100%]">
-                  <ChaosdFeatures />
+                  {/* <ChaosdFeatures /> */}
+                  <img
+                    className="scroll-to-display tw-w-[60%]"
+                    style={{ width: 700 }}
+                    src="img/features/Printed circuit board-bro.svg"
+                  />
                 </div>
               </div>
               <div className="tw-flex-[1.5] tw-z-10">
-                <span className="tw-badge tw-badge-primary">
-                  <Translate id="home.experimental">Experimental</Translate>
-                </span>
                 <h2 className="tw-text-4xl xl:tw-text-5xl">
                   {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
                   {i18n.currentLocale === 'en' && (
                     <span>
-                      Meet <span className={styles.heroTitle}>Chaosd</span>: A Chaos Toolkit for Physical Machines
+                      Meet <span className={styles.heroTitle}>Tuya T5 MCU</span>: Next Generation AI+IoT MCU
                     </span>
                   )}
                   {i18n.currentLocale === 'zh' && (
                     <span>
-                      认识<span className={styles.heroTitle}>Chaosd</span>：物理机混沌工具箱
+                      认识<span className={styles.heroTitle}>Tuya T5 芯片</span>：下一代 AI+IoT MCU 芯片
                     </span>
                   )}
                 </h2>
@@ -329,16 +310,66 @@ function Home() {
                     }}
                   >
                     {
-                      'Even if you are not using Kubernetes, you can still take advantage of the features of Chaos Mesh. One of our experimental tools, Chaosd, specifically tests chaos on physical machines. Moreover, you can use {link} in Chaos Mesh to remotely invoke Chaosd for conducting experiments on physical machines.'
+                      'Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.'
                     }
                   </Translate>
                 </p>
                 <Link
-                  to="/docs/chaosd-overview/"
+                  to="https://developer.tuya.com/cn/docs/iot/T5-E1-IPEX-hardware-design-guide?id=Ke6hd8h0ai4ag"
                   className="tw-btn !tw-btn-primary tw-gap-2 hover:-tw-translate-y-[3px]"
                 >
                   <Translate id="home.learnmore">Learn More →</Translate>
                 </Link>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="tw-flex tw-flex-col lg:tw-flex-row lg:tw-items-center tw-gap-8">
+              <div className="tw-flex-[1.5] tw-z-10">
+                <h2 className="tw-text-4xl xl:tw-text-5xl">
+                  {/* Due to the below texts are not simple strings, so we can't use <Translate /> here. */}
+                  {i18n.currentLocale === 'en' && (
+                    <span>
+                      Meet <span className={styles.heroTitle}>Tuya T5 MCU</span>: Next Generation AI+IoT MCU
+                    </span>
+                  )}
+                  {i18n.currentLocale === 'zh' && (
+                    <span>
+                      <span className={styles.heroTitle}>Tuya AI</span>：强大的多模態 AI 交互模型
+                    </span>
+                  )}
+                </h2>
+                <p className="lg:tw-text-lg tw-font-medium">
+                  <Translate
+                    id="home.chaosd.desc"
+                    values={{
+                      link: (
+                        <Link className="tw-underline dark:tw-no-underline" to="/docs/simulate-physical-machine-chaos">
+                          PhysicalMachineChaos
+                        </Link>
+                      ),
+                    }}
+                  >
+                    {
+                      'Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.'
+                    }
+                  </Translate>
+                </p>
+                <Link to="https://tuya.ai" className="tw-btn !tw-btn-primary tw-gap-2 hover:-tw-translate-y-[3px]">
+                  <Translate id="home.learnmore">Learn More →</Translate>
+                </Link>
+              </div>
+
+              <div className={clsx('tw-relative tw-flex-1 tw-flex tw-items-center tw-overflow-hidden xl:tw-h-[640px]')}>
+                <img className="tw-absolute tw-w-[90%]" src="/img/home/chaosd-bg.svg" />
+                <div className="tw-flex tw-justify-center tw-items-center xl:tw-w-[75%] lg:tw-h-[100%]">
+                  {/* <ChaosdFeatures /> */}
+                  <img
+                    className="scroll-to-display tw-w-[60%]"
+                    style={{ width: 700 }}
+                    src="img/features/Smart home-amico.svg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -362,21 +393,21 @@ function Home() {
               </h2>
               <p className="lg:tw-text-lg tw-font-medium">
                 <Translate id="home.buildcommunity.desc">
-                  Join the community and interact with maintainers and other users. Your suggestions can make Chaos Mesh
+                  Join the community and interact with maintainers and other users. Your suggestions can make TuyaOpen
                   better.
                 </Translate>
               </p>
             </div>
-            <div className="tw-grid lg:tw-grid-cols-3 tw-gap-8 tw-mb-12 lg:tw-w-[80%] lg:tw-mx-auto">
+            <div className="tw-grid lg:tw-grid-cols-2 tw-gap-8 tw-mb-12 lg:tw-w-[80%] lg:tw-mx-auto">
               <Card>
                 <IconGithub className="tw-w-12 tw-h-12 dark:tw-fill-white" />
                 <p>
                   <Translate id="home.buildcommunity.beacontributor">
-                    Be a contributor to building the future of Chaos Mesh.
+                    Be a contributor to building the future of IoT with TuyaOpen.
                   </Translate>
                 </p>
                 <Link
-                  to="https://github.com/chaos-mesh/chaos-mesh"
+                  to="https://github.com/tuya/TuyaOpen"
                   className="tw-btn tw-bg-[#f2f2f2] tw-text-[#1f2937] dark:tw-text-[#a6adba] hover:!tw-bg-[#e6e6e6] tw-normal-case dark:tw-glass dark:hover:!tw-bg-transparent dark:hover:tw-text-white"
                 >
                   GitHub
@@ -391,42 +422,27 @@ function Home() {
                 </p>
                 <div className="tw-flex tw-gap-3">
                   <Link
-                    to="https://github.com/chaos-mesh/chaos-mesh/issues"
+                    to="https://github.com/tuya/TuyaOpen/issues"
                     className="tw-btn tw-bg-[#f2f2f2] tw-text-[#1f2937] dark:tw-text-[#a6adba] hover:!tw-bg-[#e6e6e6] tw-normal-case dark:tw-glass dark:hover:!tw-bg-transparent dark:hover:tw-text-white"
                   >
                     GitHub Issues
                   </Link>
                   <Link
-                    to="https://github.com/chaos-mesh/chaos-mesh/discussions"
+                    to="https://github.com/tuya/TuyaOpen/discussions"
                     className="tw-btn tw-bg-[#f2f2f2] tw-text-[#1f2937] dark:tw-text-[#a6adba] hover:!tw-bg-[#e6e6e6] tw-normal-case dark:tw-glass dark:hover:!tw-bg-transparent dark:hover:tw-text-white"
                   >
                     GitHub Discussions
                   </Link>
                 </div>
               </Card>
-              <Card>
-                <img className="tw-w-12 tw-h-12 tw-scale-150" src="/img/icons/slack.svg" alt="Slack" />
-                <p>
-                  <Translate id="home.buildcommunity.slack">
-                    Connect with other users on our Slack channel (#project-chaos-mesh).
-                  </Translate>
-                </p>
-                <Link
-                  to="https://slack.cncf.io"
-                  className="tw-btn tw-bg-[#f2f2f2] tw-text-[#1f2937] dark:tw-text-[#a6adba] hover:!tw-bg-[#e6e6e6] tw-normal-case dark:tw-glass dark:hover:!tw-bg-transparent dark:hover:tw-text-white"
-                >
-                  <Translate id="home.buildcommunity.slack.join">Join Slack channel</Translate>
-                </Link>
-              </Card>
             </div>
             <p className="tw-font-medium tw-text-center">
-              Chaos Mesh is a{' '}
-              <Link className="tw-underline dark:tw-no-underline" to="https://cncf.io/">
-                Cloud Native Computing Foundation
+              TuyaOpen is a{' '}
+              <Link className="tw-underline dark:tw-no-underline" to="https://www.tuya.com/">
+                Tuya Inc
               </Link>{' '}
-              incubating project.
+              incubating Open-Source project.
             </p>
-            <div className="cncf-logo tw-h-16" />
           </div>
         </div>
       </main>

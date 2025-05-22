@@ -4,25 +4,24 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import { clsx } from 'clsx'
 
 import Card from './Card'
-
 function Feature({ imgUrl, title, description, className, imageWidth }) {
-  const isKubernetes = imgUrl === 'img/logos/kubernetes.svg'
+  const isMainImg = imgUrl === 'img/features/Team work-bro.svg'
 
   return (
     <Card className={className}>
       <div
         className={clsx(
           'tw-relative tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-h-full',
-          isKubernetes && 'lg:tw-items-start',
+          isMainImg && 'lg:tw-items-start',
         )}
       >
-        {!isKubernetes ? (
+        {!isMainImg ? (
           <div className="tw-flex-1 max-lg:tw-mb-6 tw-text-center">
             <img className="scroll-to-display tw-w-[60%]" style={{ width: imageWidth }} src={useBaseUrl(imgUrl)} />
           </div>
         ) : (
           <img
-            className="scroll-to-display lg:tw-absolute lg:tw-right-6 lg:-tw-bottom-12 max-lg:tw-w-[40%] lg:tw-h-48 max-lg:tw-mb-6"
+            className="scroll-to-display lg:tw-absolute lg:tw-right-3 lg:-tw-bottom-20 max-lg:tw-w-[52%] lg:tw-h-[85%] max-lg:tw-mb-6"
             src={useBaseUrl(imgUrl)}
           />
         )}
@@ -41,25 +40,25 @@ export default function Features() {
   return (
     <>
       <Feature
-        imgUrl="img/logos/kubernetes.svg"
-        title={<Translate id="home.features.k8s">Design for Kubernetes</Translate>}
+        imgUrl="img/features/Team work-bro.svg"
+        title={<Translate id="home.features.title">Design for IoT Makers</Translate>}
         description={
           <p>
             <Translate
-              id="home.features.k8s.desc"
+              id="home.features.desc0"
               values={{
                 crd: (
                   <Link
                     className="tw-underline dark:tw-no-underline"
-                    to="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+                    to="docs/placeholder"
                   >
-                    CustomResourceDefinition (CRD)
+                    placeholder docs
                   </Link>
                 ),
               }}
             >
               {
-                'In the Kubernetes realm, {crd} is a proven solution for implementing custom resources. Chaos Mesh leverages CRDs for natural integration with the Kubernetes ecosystem.'
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utdo eiusmod tempor incididunt utdo eiusmod tempor incididunt ut'
               }
             </Translate>
           </p>
@@ -75,34 +74,27 @@ export default function Features() {
               <Translate
                 id="home.features.easytouse.desc"
                 values={{
-                  minikube: (
-                    <Link className="tw-underline dark:tw-no-underline" to="https://minikube.sigs.k8s.io/">
-                      minikube
-                    </Link>
-                  ),
-                  kind: (
-                    <Link className="tw-underline dark:tw-no-underline" to="https://kind.sigs.k8s.io/">
-                      kind
+                  externallink: (
+                    <Link className="tw-underline dark:tw-no-underline" to="https://google.com">
+                      Google
                     </Link>
                   ),
                 }}
               >
                 {
-                  'No special dependencies, Chaos Mesh can be easily deployed on Kubernetes clusters directly, including {minikube} and {kind}.'
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utdo eiusmod tempor incididunt utdo eiusmod tempor incididunt ut{externallink}.'
                 }
               </Translate>
             </p>
             <ul>
               <li>
                 <Translate id="home.features.easytouse.list.1">
-                  Ability to perform chaos experiments in production environments without modifying the deployment logic
-                  of applications.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 </Translate>
               </li>
               <li>
                 <Translate id="home.features.easytouse.list.2">
-                  Quickly create chaos experiments through the dashboard, allowing users to observe the experiment's
-                  state in real time and quickly roll back any injected failures.
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.
                 </Translate>
               </li>
             </ul>
@@ -117,14 +109,12 @@ export default function Features() {
           <>
             <p>
               <Translate id="home.features.flexiblescope.desc.1">
-                Chaos Mesh provides multiple filtering rules that allow selecting injection targets based on labels,
-                annotations, and so on. They are collectively called selectors.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.
               </Translate>
             </p>
             <p>
               <Translate id="home.features.flexiblescope.desc.2">
-                In addition, users can also set a namespace whitelist to greater control the "blast radius" of the
-                experiment.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.
               </Translate>
             </p>
           </>
@@ -137,8 +127,7 @@ export default function Features() {
         description={
           <p>
             <Translate id="home.features.securityfirst.desc">
-              Role-based access control (RBAC) is enabled by default to restrict malicious operations. Users must be
-              authorized with specific privileges to access the dashboard.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.
             </Translate>
           </p>
         }

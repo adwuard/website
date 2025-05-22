@@ -218,16 +218,16 @@ export default function Mesh() {
             },
           )
           new Typewriter('.mesh-text', { delay: 50 })
-            .typeString('Injecting NetworkChaos/loss...')
+            .typeString('🛠️ Build AI Smart IoT Hardware')
             .pauseFor(500)
             .deleteAll()
-            .typeString('Simulating packet loss...')
+            .typeString('')
             .pauseFor(2000)
             .deleteAll()
-            .typeString('⏳ Recovering...')
+            .typeString('⚡️ Fast and Easy Development')
             .pauseFor(1500)
             .deleteAll()
-            .typeString('✅ Done!')
+            .typeString('☁️ AI Speech and Image Multi-modal')
             .pauseFor(1000)
             .callFunction(() => {
               gsap.fromTo(

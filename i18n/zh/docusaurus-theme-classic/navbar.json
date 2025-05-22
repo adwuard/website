@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Chaos Mesh",
+    "message": "TuyaOpen",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Chaos Mesh",
+    "message": "TuyaOpen",
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
@@ -13,6 +13,10 @@
   },
   "item.label.Blog": {
     "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Supported Hardware": {
+    "message": "硬件支持",
     "description": "Navbar item with label Blog"
   },
   "item.label.Community Group": {
